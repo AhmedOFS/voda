@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".display">
+
+    <androidx.cardview.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="30dp"
+        card_view:cardCornerRadius="1dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:orientation="vertical" >
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/names"
+                android:text="Delta Airlines "
+                android:padding="10dp"
+                android:maxLines="5"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="30sp"
+
+                />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/country"
+                android:text="Taiwan"
+                android:padding="5dp"
+                android:maxLines="5"
+                android:textColor="@color/black"
+
+                android:textSize="22sp"
+
+                />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/slogan"
+                android:text="Together we are Strong"
+                android:paddingLeft="10dp"
+                android:maxLines="5"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+
+                />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Head"
+                android:text="Headquarters"
+                android:paddingLeft="10dp"
+                android:maxLines="5"
+                android:textColor="#A0A0A0"
+              android:textStyle="bold"
+                android:textSize="15sp"
+
+                />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/headquarters"
+                android:text="Taiwan"
+                android:paddingLeft="10dp"
+                android:maxLines="5"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/visit"
+android:backgroundTint="#FF0000"
+                android:text="Visit" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
